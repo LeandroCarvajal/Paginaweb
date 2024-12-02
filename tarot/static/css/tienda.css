@@ -1,0 +1,217 @@
+body {
+    padding-top: 70px; /* Ajusta este valor a la altura del navbar */
+  }
+/* Estilos para el contenedor principal */
+.container {
+    padding: 20px;
+  }
+  
+  /* Estilos para el navbar */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera */
+  }
+  
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40; /* Color del texto del navbar */
+  }
+  
+.navbar .navbar-nav {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding-left: 0; /* Quita el padding */
+  }
+  
+.navbar .navbar-nav .nav-link {
+    color: #343a40; /* Color del texto de los enlaces del navbar */
+  }
+  
+.navbar .navbar-nav .nav-link:hover {
+    color: #e83e8c; /* Color rosado al pasar el mouse */
+}
+  
+.navbar .navbar-nav .nav-link.active {
+    color: #e83e8c; /* Color rosado cuando está activo */
+    font-weight: bold; /* Negrita cuando está activo */
+}
+  
+.nav-link.active {
+  font-weight: bold;
+  color: #e83e8c; /* Color que prefieras para el enlace activo */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #343a40;
+  }
+  
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+footer .social-icons a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+footer p {
+    margin: 10px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.card img {
+    width: 100%;
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Las imágenes se ajustan al tamaño del contenedor */
+  }
+  
+.btn-outline-pink:hover {
+    background-color: #ff69b4;
+    color: #fff;
+  }
+  
+#cart-section {
+    margin-top: 40px;
+  }
+  
+#cart-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.badge {
+    font-size: 1rem;
+  }
+  
+#pagar-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+#pagar-btn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+.eliminar-item {
+    margin-left: 10px;
+  }
+  
+.eliminar-item:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+#filters-form {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+#filters-form .form-label {
+    color: #333;
+  }
+  
+#filters-form .form-select,
+#filters-form .form-range {
+    margin-bottom: 10px;
+  }
+  
+.button {
+    background-color: #e83e8c;
+    color: white;
+    border: 1px solid #e83e8c;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+.button1 {
+  background-color: #c529e4;
+  color: white;
+  border: 1px solid #c529e4;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 10px ;
+  }
+
+  .Btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  
+  .svgIcon {
+    width: 16px;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .Btn::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+  }
+  
+  .Btn:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%,-50%);
+    border-radius: 0;
+  }
+  
+  .Btn:active {
+    transform: translate(5px,5px);
+    transition-duration: .3s;
+  }
+
+  p {
+    opacity: 0.6;           /* Nivel de transparencia */
+    margin: 20px 0;         /* Espacio superior e inferior */
+    padding: 10px;          /* Espacio interno del párrafo */
+}

@@ -1,0 +1,118 @@
+body {
+    padding-top: 70px; /* Ajusta este valor a la altura del navbar */
+  }
+  /* Estilos para el contenedor principal */
+  .container {
+      padding: 20px;
+    }
+    
+    /* Estilos para el navbar */
+  .navbar {
+      background-color: #ffffff; /* Fondo blanco */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera */
+    }
+    
+  .navbar .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #343a40; /* Color del texto del navbar */
+    }
+    
+  .navbar .navbar-nav {
+      list-style-type: none; /* Quita los puntos de la lista */
+      padding-left: 0; /* Quita el padding */
+    }
+    
+  .navbar .navbar-nav .nav-link {
+      color: #343a40; /* Color del texto de los enlaces del navbar */
+    }
+    
+  .navbar .navbar-nav .nav-link:hover {
+      color: #e83e8c; /* Color rosado al pasar el mouse */
+  }
+    
+  .navbar .navbar-nav .nav-link.active {
+      color: #e83e8c; /* Color rosado cuando está activo */
+      font-weight: bold; /* Negrita cuando está activo */
+  }
+  .nav-link.active {
+    font-weight: bold;
+    color: #e83e8c; /* Color que prefieras para el enlace activo */
+  }
+  /* Estilos para el footer */
+  footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      color: #343a40;
+    }
+    
+  footer .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+  footer .social-icons a img {
+      width: 24px;
+      height: 24px;
+    }
+    
+  footer p {
+      margin: 10px 0;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+.button {
+  background-color: #e83e8c;
+  color: white;
+  border: 1px solid #e83e8c;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.carousel-item {
+  border: 2px solid #e83e8c; /* Borde de color rosa alrededor de cada reseña */
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Fondo gris claro para el contenido del carrusel */
+}
+
+form {
+  background-color: #f8f9fa; /* Fondo claro */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 2px solid #e83e8c; /* Borde color rosado */
+  margin-top: 10px; /* Espacio entre el formulario y el navbar */
+}
+
+/* Ajustes para la apariencia de los botones */
+form .button {
+  background-color: #e83e8c; /* Color de fondo del botón en rosado */
+  color: #fff; /* Texto en blanco */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.subtittle {
+  margin: 20px 0;      /* Margen superior e inferior de 20px */
+  padding: 15px;       /* Relleno interno de 15px */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+  border-radius: 5px;  /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  font-size: 16px;     /* Tamaño de fuente */
+  line-height: 1.5;    /* Espaciado entre líneas */
+}
