@@ -16,40 +16,46 @@
                 <img src="{% static 'images/logopng.png' %}" alt="Logo" style="height: 40px;">
                 <span>Somos Magas</span>
             </a>
+            <!-- Botón de hamburguesa para móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <!-- Enlaces de navegación -->
-            <ul class="navbar-nav ms-auto">
-                <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if request.resolver_match.url_name == 'reiki' %}active{% endif %}" href="{% url 'reiki' %}">Reiki Usui</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if request.resolver_match.url_name == 'floral' %}active{% endif %}" href="{% url 'floral' %}">Terapia Floral</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if request.resolver_match.url_name == 'tarot' %}active{% endif %}" href="{% url 'tarot' %}">Sesiones Tarot</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if request.resolver_match.url_name == 'tienda' %}active{% endif %}" href="{% url 'tienda' %}">Tienda</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if request.resolver_match.url_name == 'nosotros' %}active{% endif %}" href="{% url 'nosotros' %}">Nosotras</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if request.resolver_match.url_name == 'resenas' %}active{% endif %}" href="{% url 'resenas' %}">Reseñas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if request.resolver_match.url_name == 'contacto' %}active{% endif %}" href="{% url 'contacto' %}">Contacto</a>
-            </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login' %}">
-                        <img src="{% static 'images/login.png' %}" alt="Ícono de Inicio de Sesión" style="height: 24px; width: 24px;">
-                    </a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'reiki' %}active{% endif %}" href="{% url 'reiki' %}">Reiki Usui</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'floral' %}active{% endif %}" href="{% url 'floral' %}">Terapia Floral</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'tarot' %}active{% endif %}" href="{% url 'tarot' %}">Sesiones Tarot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'tienda' %}active{% endif %}" href="{% url 'tienda' %}">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'nosotros' %}active{% endif %}" href="{% url 'nosotros' %}">Nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'resenas' %}active{% endif %}" href="{% url 'resenas' %}">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'contacto' %}active{% endif %}" href="{% url 'contacto' %}">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">
+                            <img src="{% static 'images/login.png' %}" alt="Ícono de Inicio de Sesión" style="height: 24px; width: 24px;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-
     <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
