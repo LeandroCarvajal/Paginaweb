@@ -126,6 +126,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Twilio settings
 TWILIO_ACCOUNT_SID = 'ACa0bed51b3c1fab5876e3bc5f1722c8aa'  # Reemplázalo con tu SID de Twilio
-TWILIO_AUTH_TOKEN = '9697f3f8f1937564580c120e3ab38a06'    # Reemplázalo con tu token de autenticación de Twilio
+TWILIO_AUTH_TOKEN = '5b9b46d4475a5a4d03688ec87e564058'    # Reemplázalo con tu token de autenticación de Twilio
 TWILIO_PHONE_NUMBER = '+16602855190'  # Reemplázalo con el número de Twilio
 
